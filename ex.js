@@ -16,6 +16,11 @@ function add(){
     feed.innerHTML = 'Дать пива';
     tam.append(feed);
 
+    const span = document.createElement('span');
+    span.className = 'span';
+    span.innerHTML = 'HP: 100';
+    disp.append(span);
+
     const image = document.createElement('img');
     image.className = 'dino';
     image.src = 'dino.jpg';
@@ -23,11 +28,6 @@ function add(){
 
     function health(){
         let hel = 100;
-        const span = document.createElement('span');
-        span.className = 'span';
-        span.innerHTML = `HP: ${hel}`;
-        image.before(span);
-
         feed.addEventListener('click', bla);
 
         function bla(){
